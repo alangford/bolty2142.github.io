@@ -88,7 +88,7 @@ angular.module("iQuit").service("iQuitService", function ($http) {
     this.getQuote = function () {
         return $http({
             method: "GET",
-            url: "http://quotesondesign.com/api/3.0/api-3.0.json"
+            url: "https://quotesondesign.com/api/3.0/api-3.0.json"
         });
     };
 });
