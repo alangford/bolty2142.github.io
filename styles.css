@@ -73,6 +73,19 @@ footer a:hover{
     cursor:pointer;
     background-color: #ff881f;
 }
+#already{
+    margin-top: 10px;
+    background-color: #de701b;
+    padding: 10px 5px;
+    color: white;
+    border: solid 1px #f69f35;
+    border-radius: 10%;
+
+}
+#already:hover{
+    cursor:pointer;
+    background-color: #ff881f;
+}
     .bigger-text{
         font-size: 4vh;
     }
@@ -104,6 +117,10 @@ footer a:hover{
 
     height: 20vh;
     clip-path: circle(34.4% at 47% 67%);
+    -webkit-animation-duration: 4s;
+    animation-name: moving-body;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 @-webkit-keyframes moving-bb {
     0%   {background-color: #ffffff; left:40vw; top:0px;}
@@ -128,4 +145,13 @@ footer a:hover{
 .codedBy{
     margin-top: 10vh;
 }
+
+@-webkit-keyframes moving-body {
+    0%   {transform: rotate(50deg);}
+    25%  {transform: rotate(-50deg);}
+    50%  {transform: rotate(50deg);}
+    75%  {transform: rotate(-50deg);}
+    100% {transform: rotate(50deg);}
+}
 /*^about^*/
+

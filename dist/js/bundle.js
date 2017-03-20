@@ -45,6 +45,13 @@ angular.module("iQuit").controller("iQuitCtrl", function ($scope, iQuitService) 
         localStorage.setItem("howManyDays", JSON.stringify($scope.howManyDays));
         $scope.howManyDaysStored = JSON.parse(localStorage.getItem("howManyDays"));
     };
+    $scope.already = function () {
+        $scope.smokeToday = true;
+        $scope.ifYes = false;
+        $scope.howManyDays = JSON.parse(localStorage.getItem("howManyDays"));
+        localStorage.setItem("howManyDays", JSON.stringify($scope.howManyDays));
+        $scope.howManyDaysStored = JSON.parse(localStorage.getItem("howManyDays"));
+    }
 
     $scope.submit = function (r) {
         $scope.rea.push({ r: r });
