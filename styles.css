@@ -15,7 +15,7 @@ nav{
 }
 nav span{
     color: white;
-    font-size: 40px;
+    font-size: 4vh;
     padding: 0 2vw;
 }
 nav span:hover{
@@ -32,7 +32,7 @@ footer{
 }
 footer a{
     color: white;
-    font-size: 30px;
+    font-size: 4vh;
     padding: 2vh 2vw;
     text-decoration: none;
 }
@@ -73,6 +73,17 @@ footer a:hover{
     cursor:pointer;
     background-color: #f69f35;
 }
+    .bigger-text{
+        font-size: 4vh;
+    }
+    .bigger-text-two{
+        font-size: 3vh;
+    }
+    .bigger-imput{
+        height: 5vh;
+        width: 20vw;
+    }
+
 
 
 

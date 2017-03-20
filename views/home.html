@@ -1,29 +1,29 @@
 <div id="prompt" ng-hide="smokeToday">
     <h3>Have you smoked today?</h3>
-    <div id="yes" ng-click="yes()">Yes</div>
+    <div id="yes" ng-click="yes()"><p class="bigger-text">Yes</p></div>
 
-    <div id="no" ng-click="no()">No</div>
+    <div id="no" ng-click="no()"><p class="bigger-text">No</p></div>
 </div>
 
 <div id="main-section" class="row">
     <div class="col container" ng-show="smokeToday" >
 
         <i-quit-directive ng-show="ifYes"></i-quit-directive>
-        <h4 class="text-center">Todays symptoms are</h4>
-        <ul style="list-style-type: none" class="col text-center" ng-repeat="s in symptoms[howManyDaysStored][0]"> <li>{{s}}</li></ul>
+        <h4 class="text-center bigger-text">Todays symptoms are</h4>
+        <ul style="list-style-type: none" class="col text-center" ng-repeat="s in symptoms[howManyDaysStored][0]"> <li class="bigger-text-two">{{s}}</li></ul>
 
 
     </div>
     <div  ng-show="smokeToday" class="col container">
-    <p>What are your reasons to quit?</p>
-        <input class="input-field" type="text" ng-model="reasons">
-    <button class="btn" ng-click="submit(reasons)">Submit</button>
-    <p>Upload a photo here!</p><input type="text" ng-model="reasonImg">
-    <button  class="btn" ng-click="photo(reasonImg)">Submit Photo Url</button>
+    <p class="bigger-text-two">What are your reasons to quit?</p>
+        <input class="input-field bigger-imput" type="text" ng-model="reasons">
+    <button class="btn btn-primary" ng-click="submit(reasons)">Submit</button>
+    <p class="bigger-text-two">Upload a photo here!</p><input class="bigger-imput" type="text" ng-model="reasonImg">
+    <button  class="btn btn-primary" ng-click="photo(reasonImg)">Submit Photo Url</button>
     </div>
 </div>
 <div class="row">
     <div class="col-5 container" style="margin-top: 3vh">
-        <h4>{{quote.quote}}</h4><cite>- {{quote.author}}</cite>
+        <h4 class="bigger-text">{{quote.quote}}</h4><cite>- {{quote.author}}</cite>
     </div>
 </div>
