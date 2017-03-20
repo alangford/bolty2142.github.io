@@ -10,7 +10,7 @@
 
 
 nav{
-    background-color: #c6802c;
+    background-color: #de701b;
 
 }
 nav span{
@@ -20,7 +20,7 @@ nav span{
 }
 nav span:hover{
     cursor:pointer;
-    background-color: #f69f35;
+    background-color: #ff881f;
 }
 
 footer{
@@ -50,7 +50,7 @@ footer a:hover{
     padding:  2em;
 }
 #yes{
-    background-color: #c6802c;
+    background-color: #de701b;
     padding: 10px 5px;
     color: white;
     border: solid 1px #f69f35;
@@ -59,11 +59,11 @@ footer a:hover{
 }
 #yes:hover{
     cursor:pointer;
-    background-color: #f69f35;
+    background-color: #ff881f;
 }
 #no{
     margin-top: 10px;
-    background-color: #c6802c;
+    background-color: #de701b;
     padding: 10px 5px;
     color: #ffffff;
     border: solid 1px #f69f35;
@@ -71,7 +71,7 @@ footer a:hover{
 }
 #no:hover{
     cursor:pointer;
-    background-color: #f69f35;
+    background-color: #ff881f;
 }
     .bigger-text{
         font-size: 4vh;
@@ -81,7 +81,12 @@ footer a:hover{
     }
     .bigger-imput{
         height: 5vh;
-        width: 20vw;
+        width: 34vw;
+    }
+
+    .bigger-button{
+        height: 10vh;
+        width: 15vw;
     }
 
 
